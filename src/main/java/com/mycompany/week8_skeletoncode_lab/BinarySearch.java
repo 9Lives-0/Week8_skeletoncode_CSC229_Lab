@@ -27,7 +27,15 @@ public class BinarySearch {
         }
         return index;
     }
-    //ToDo 2: Call the above method and test the algorithm  
-    // provide time and space analysis 
+    public static void main(String[] args) {
+        int[] sorted = {-5, -1, 0, 2, 3, 4, 7, 9, 11, 15};
+        int key1 = 7, key2 = 6;
+        System.out.println("BinarySearch key " + key1 + " -> index " +
+                runBinarySearchIteratively(sorted, key1, 0, sorted.length - 1));
+        System.out.println("BinarySearch key " + key2 + " -> index " +
+                runBinarySearchIteratively(sorted, key2, 0, sorted.length - 1));
+        System.out.println("Time: O(log n), Space: O(1)");
+    }
+
 
 }
